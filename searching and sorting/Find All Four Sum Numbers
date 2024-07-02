@@ -1,0 +1,34 @@
+class Solution {
+    public ArrayList<ArrayList<Integer>> fourSum(int[] arr, int key) {
+        int n = arr.length;
+        ArrayList<ArrayList<Integer>> ans = new ArrayList<>();
+        Arrays.sort(arr);
+        
+        for(int i = 0; i < n-3; i++){
+            for(int j = i+1; j < n-2; j++){
+               
+                int k = j+1;
+                int l = n-1;
+                while(k < l){
+                    if(arr[i]+arr[j]+arr[k]+arr[l]==key){
+                        ArrayList<Integer> list = new ArrayList<>();
+                        list.add(arr[i]);
+                        list.add(arr[j]);
+                        list.add(arr[k]);
+                        list.add(arr[l]);
+                        if(!ans.contains(list)){
+                            ans.add(list);
+                        }
+                        k++;
+                        l--;
+                    }else if(arr[i]+arr[j]+arr[k]+arr[l] > key){
+                        l--;
+                    }else{
+                    k++;
+                    }
+                }
+            }
+        }
+        return ans;
+    }
+}

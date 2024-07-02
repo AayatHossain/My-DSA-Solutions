@@ -1,0 +1,28 @@
+
+
+
+class Solution
+{
+    //Function to merge the arrays.
+    public static void merge(long arr1[], long arr2[], int n, int m) 
+    {
+        int i = 0;
+        int j = 0;
+        int k = n - 1;
+        while(i <= k && j < m){
+            //if any element of arr2 is smaller than current arr1[i], then we will swap with the largest element of arr1, which is at k index,
+            //after swapping, we will reduce k by 1, and increase j by 1. else we will increase i by 1.
+            if(arr1[i] > arr2[j]){
+                long temp = arr1[k];
+                arr1[k] = arr2[j];
+                arr2[j] = temp;
+                j++; k--;
+            }else{
+                i++;
+            }
+           
+        }
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
+    }
+}
