@@ -1,0 +1,22 @@
+1.	https://leetcode.com/problems/kth-largest-element-in-an-array/
+	use min heap
+
+2. https://leetcode.com/problems/maximum-product-subarray/description/
+
+3.https://www.geeksforgeeks.org/given-a-sorted-and-rotated-array-find-if-there-is-a-pair-with-a-given-sum/?ref=lbp
+
+4.https://www.geeksforgeeks.org/merging-intervals/
+
+5. https://www.geeksforgeeks.org/find-minimum-number-of-merge-operations-to-make-an-array-palindrome/
+
+6.https://www.geeksforgeeks.org/space-optimization-using-bit-manipulations/
+
+7.https://www.geeksforgeeks.org/longest-subarray-sum-divisible-k/
+
+
+
+
+8.moores voting algorithm
+https://www.geeksforgeeks.org/majority-element/
+
+9.https://www.geeksforgeeks.org/problems/stickler-theif-1587115621/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=bottom_sticky_on_article
